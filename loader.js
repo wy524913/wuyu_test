@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Sea.js 2.3.0 | seajs.org/LICENSE.md
  */
 !(function(global, undefined) {
@@ -847,7 +847,7 @@
 
 /**
  * seajs配置，方法扩展，页面入口模块加载
- * @author liuqing
+ * @author wuyu
  */
 !(function(global, undefined) {
 
