@@ -1,0 +1,342 @@
+@charset "UTF-8";
+
+html,body {
+    width: 100%;
+    height: 100%;
+}
+
+#content{
+    height:100%;
+    width:100%;
+    position: relative;
+}
+
+img{width:100%;display:block;}
+
+.wraps{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    overflow:hidden;
+    background-image:url('../img/98_01.gif');
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+}
+
+.wrap-g{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;left:0;
+    overflow:hidden;
+    background-image:url('../img/page3/113_1.gif');
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+}
+.wraps img{height:100%;}
+.hide{display:none;}
+.top1{height:8%;padding-top: 4%;padding-left: 7%;padding-right: 7%;}
+.top1 .logo{
+    height: 70%;
+    float: left;
+    animation-duration:1.5s;
+    -webkit-animation-duration:1.5s;
+    animation-delay:0.5s;
+    -webkit-animation-delay:0.5s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+.top1 .home{
+    height: 70%;
+    width: auto;
+    float: right;
+}
+.slogn{
+    position: absolute;
+    top: 10%;
+    width: 250px;
+    left: 50%;
+    height: 200px;
+    margin-left: -125px;
+}
+.slogn img{
+    animation-duration:1.5s;
+    -webkit-animation-duration:1.5s;
+    animation-delay:1s;
+    -webkit-animation-delay:1s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+.slogn1{
+    height: 200px;
+    width: 300px;
+    top: 10%;
+    left:50%;
+    position: absolute;
+    margin-left: -150px;
+    margin-top: -20px;
+    transform: scale(1.31);
+    -webkit-transform:scale(1.31);
+    opacity:0.07;
+}
+.top2{
+    width: 260px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    height: 42px;
+    margin-left: -120px;
+    animation:fadeInDown 1s 1s linear both;
+    -webkit-animation:fadeInDown 1s 1s linear both;
+ }
+.top3{
+    width: 200px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    height: 52px;
+    margin-left: -90px;
+    margin-top:50px;
+    animation:fadeInDown 1s 1.1s linear both;
+    -webkit-animation:fadeInDown 1s 1.1s linear both;
+}
+.top4{
+    position: absolute;
+    width: 250px;
+    left: 50%;
+    bottom: 52%;
+    height: 160px;
+    margin-left: -120px;
+    animation: fadeInUpBig 2s 1s linear both;
+    -webkit-animation: fadeInUpBig 2s 2s linear both;
+    margin-bottom: -150px;
+}
+.sp1{
+    width: 280px;
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    margin-left: -130px;
+    animation:fadeInDown 1s 1s linear both;
+    -webkit-animation:fadeInDown 1s 1s linear both;
+}
+.sp2{
+    width:30%;
+    position:absolute;bottom:15%;left:37%;overflow:hidden;
+    animation:fadeInDown 1s 1s linear both;
+    -webkit-animation:fadeInDown 1s 1s linear both;
+}
+.sp3{
+    width:17%;
+    position:absolute;bottom:9%;left:41%;overflow:hidden;
+    animation:fadeInUp 1s 2s linear both;
+    -webkit-animation:fadeInUp 1s 2s linear both;
+}
+.sp4{
+    width:45%;
+    position:absolute;top:30%;left:30%;overflow:hidden;
+    animation:fadeInLeft 1s 1.8s linear both;
+    -webkit-animation:fadeInLeft 1s 1.8s linear both;
+}
+.sp5{
+    width:55%;
+    position:absolute;top:10%;left:26%;overflow:hidden;
+    animation:fadeInLeft 1s 1.2s linear both;
+    -webkit-animation:fadeInLeft 1s 1.2s linear both;
+}
+.fix0{
+    width: 330px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -10px;
+    z-index: 9999;
+    animation:fadeInLeft 1s 1.8s linear both;
+    -webkit-animation:fadeInLeft 1s 1.8s linear both;
+}
+.fix3{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    overflow: hidden;
+    -webkit-animation: fadeIn 0.7s;
+    animation: fadeIn 0.7s;
+}
+
+.fix4{
+    border:none;
+    position: absolute;
+    top: 68%;
+    width: 25%;
+    right: 10%;
+}
+.fix5{
+    width: 330px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: 110px;
+    position:absolute;overflow:hidden;
+}
+.fix6{
+    width: 250px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-left: -120px;
+    overflow: hidden;
+}
+.fix7{
+    width: 50px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    overflow: hidden;
+    margin-left: 80px;
+
+}
+ .fix1{
+    width:45%;
+    position:absolute;top:15%;left:5%;overflow:hidden;
+    animation:fadeInLeft 1s 1.8s linear both;
+    -webkit-animation:fadeInLeft 1s 1.8s linear both;
+}
+ .fix2{
+    width:80%;
+    position:absolute;top:40%;left:9%;overflow:hidden;
+    animation:fadeInLeft 1s 1.8s linear both;
+    -webkit-animation:fadeInLeft 1s 1.8s linear both;
+}
+.spark{
+    height: 250px;
+    width:250px;
+    left: 50%;
+    top: 10%;
+    position: absolute;
+    margin-left: -110px;
+    margin-top: -20px;
+    transform: scale(1.2);
+    -webkit-transform:scale(1.2);
+    animation:zoomInDown 1s 1s linear both;
+    -webkit-animation:zoomInDown 1s 1s linear both;
+}
+
+.penguin{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: 80px;
+}
+.penguin img{
+    width:auto;
+    animation-duration:1.5s;
+    -webkit-animation-duration:1.5s;
+    animation-delay:2s;
+    -webkit-animation-delay:2s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+
+}
+.man1{
+    position: absolute;
+    height: 100px;
+    width:100%;
+    bottom: 3%;
+    opacity:0.5;
+
+}
+.man1 img{
+    height:100%;width:100%;
+    animation-duration:1.5s;
+    -webkit-animation-duration:1.5s;
+    animation-delay:2s;
+    -webkit-animation-delay:2s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+
+}
+.man{
+    position: absolute;
+    height: 100px;
+    width:100%;
+    bottom: 0px;
+
+}
+.man img{
+    height:100%;width:100%;
+    animation-duration:1.5s;
+    -webkit-animation-duration:1.5s;
+    animation-delay:1.5s;
+    -webkit-animation-delay:1.5s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+
+/*媒体查询兼容手机尺寸*/
+@media screen and (max-height:480px){
+    .nav li{margin-bottom:3%;}
+    .info_title{top:8%}
+    .info_con p{line-height:15px;}
+    .info_con{padding-top:1%;padding-bottom:1%;}
+    .posi_btn{bottom:6.5%;}
+}
+@media screen and (max-height:568px){
+    .posi_btn{bottom:4%;}
+    .info_con p{line-height:17.5px;}
+}
+/*ipad mini*/
+@media screen and (min-width:750px) and (min-height:960px)
+{
+    .info_con{margin-top:2%}
+    .posi_btn a{padding:2% 0;font-size:28px;}
+    .info_con p{font-size:22px;}
+    .content,.footer{font-size:24px}
+    .content2{-webkit-border-radius:15px}
+
+    .box h1{font-size:36px}
+    .box h1 span.small,.info_box p.big{font-size:26px}
+
+    .search p{font-size:28px;}
+    .search select, .search input{height:80px;font-size:26px;-webkit-border-radius:6px}
+    .search select{background-size:34px auto}
+    .search input{ background-size:40px auto}
+
+    .joblist_box ul li{background-size:16px auto;margin-bottom:40px}
+    .joblist_box ul li a{font-size:28px}
+    .btn a{-webkit-border-radius:6px;font-size:40px}
+
+    .jobdetail_box .detail h1{font-size:48px;}
+    .jobdetail_box .detail{line-height:40px}
+    .jobdetail_box .detail p{font-size:20px;}
+    .jobdetail_box .detail .deTit{font-size:26px;}
+
+    .login_box .jobinfo{font-size:30px}
+    .login_box .jobinfo p.jobname{font-size:60px}
+
+    .login input{height:80px;font-size:30px;text-indent:88px;margin-bottom:5%;}
+    /*.login input.name,.login input.pwd{background-size:76px auto}*/
+    .login p.note{font-size:24px}
+
+    .success_box h1{font-size:40px}
+    .success_box a.return{font-size:40px;-webkit-border-radius:6px;}
+
+    .footer{line-height:40px}
+    .footer img{width:24px;padding-right:8px}
+}
+
+

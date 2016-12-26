@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+   <link rel="stylesheet" href="bootstrap.css"  media="screen">
+  <link rel="stylesheet" href="style_crcb.css"  media="screen">
+    		<script type="text/javascript" src="jquery.js" charset="GB18030"></script>
+ </head>
+ <script type="text/javascript">
+
+			$(function(){	
+				$("#choice_ok").click(function(){
+					var size=$("input:checked").size();
+					if(size==0){
+						alert("选项为空,请重新选择一项!");
+						return;
+					}else{
+						var bankno=$("input:checked").parent().parent().find("td").eq(1).html();
+						var banknm=$("input:checked").parent().parent().find("td").eq(2).html();
+						$.when(
+						parent.setval(banknm)
+                        ).done(function(){
+						parent.closeclock();
+						})
+					}
+					
+				})
+				})
+		function cancel(){
+			parent.closeclock();
+			
+		}
+		
+ </script>
+ <body>
+  	 <div class="container" role="main">
+            <div class="col-sm-12" style="margin-top:10px;">
+                <div  align="center" class="panel panel-default" style="margin-top: 30px; ">
+                    <div class="panel-heading">
+                      <h3 style="font-weight:bold;font-family: '黑体', 'Arial Narrow';">客户确认信息</h3>
+                    </div>
+                    <div class="panel-body" style="background:#E6E2EC;">
+                            <table align="center">
+                                
+                                <tr>
+                                    <td style="text-align:right;width:180px;" >
+                                        姓&nbsp;&nbsp;&nbsp;名：
+                                    </td>
+                                    <td style="text-align:left;width:180px;" >
+                                        张三三
+                                    </td>
+                                    <td style="text-align:right;width:180px;">
+                                    证 件 号：
+                                    </td>
+                                    <td style="text-align:left;width:180px;" >
+                                       123123123123123123123
+                                    </td>
+                                    <td style="text-align:right;width:180px;">
+                                        手 机 号：
+                                    </td>
+                                    <td style="text-align:left;width:180px;" >
+                                       1777266287828
+                                    </td>                      
+                                </tr>
+                                      </table>
+                    </div>                                   
+                </div>
+            </div>
+        </div>
+ </body>
+</html>

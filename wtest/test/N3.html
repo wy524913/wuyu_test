@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+    <link rel="stylesheet" href="bootstrap.css"  media="screen">
+  <link rel="stylesheet" href="style_crcb.css"  media="screen">
+  <script type="text/javascript" src="jquery.js" charset="GB18030"></script>
+  <title>Document</title>
+ </head>
+<style type="text/css">
+.field input {
+	    height: 88px;
+    margin-right: 5px;
+    width: 130px;
+    font-size: 30px;
+    font-style: normal;
+	text-align:center;
+	color:blueviolet;
+}
+	input[type=text] :focus {
+    color: #080808;
+    border-color: red;
+    border-radius: 14px;
+    border: solid 2px red;
+	background-color:bisque;
+	font-style:oblique;
+}
+
+</style>
+ <script type="text/javascript">
+$(function(){
+    $.when(
+                $("#CARDNO1,#CARDNO2,#CARDNO3,#CARDNO4,#CARDNO5").on("keydown.myevent", function(e) {              
+				 if( e.currentTarget.value.length==4 && e.target.tagName.toLowerCase() === "input") {
+					// if(event.keyCode!=8)
+					 // event.keyCode=9   
+					this.nextElementSibling.focus()
+                    }
+				if( e.currentTarget.value.length==0 && e.target.tagName.toLowerCase() === "input") {
+					 if(this.previousElementSibling&&this.previousElementSibling!="#CARDO1")
+					 // event.keyCode=9   
+					this.previousElementSibling.focus()
+                    }
+
+                })).then(
+				
+				function(data)
+				{
+					alert(data)}) 
+			
+// $("#CARDNO1,#CARDNO2,#CARDNO3,#CARDNO4,#CARDNO5").off(); 
+})
+	function down(){
+				if(event.keyCode)
+				event.keyCode=9
+				
+				}
+
+
+					function offevent(){
+       $("#CARDNO1,#CARDNO2,#CARDNO3,#CARDNO4,#CARDNO5").off(); 
+				}
+
+
+ </script>
+ <body>
+                 <div class="top top_green ">
+                <p>挂失交易</p>
+                <p>输入挂失卡号</p>
+
+            </div>
+            <!--导航栏-结束-->
+            <!--内容-开始-->
+            <div class="main">
+            <div class="main_box" style="height:96%;margin-top: 30px;">
+            <h1 style="font-weight:bold;">请输入您的银行卡号</h1>
+                <div class="form_group" style="margin-top: 30px;">
+                     
+                        <div style="margin-top:100px;">
+                        <div class="field" _blur="false">
+					
+                            <input id="CARDNO1" name="CARDNO" value=""  class="input" type="text" style="display:inline;" maxlength="4">
+							 <input id="CARDNO2" name="CARDNO" value="" autoInput="num" class="input" type="text" style="display:inline;"  maxlength="4"  >
+							 <input id="CARDNO3" name="CARDNO" value="" autoInput="num" class="input" type="text" style="display:inline;"  maxlength="4">
+							 <input id="CARDNO4" name="CARDNO" value="" autoInput="num" class="input" type="text" style="display:inline;"  maxlength="4"  >
+							 <input id="CARDNO5" name="CARDNO" value="" autoInput="num" class="input" type="text" style="display:inline;"  maxlength="3"  >
+
+                        </div>
+                        </div>
+                    </div>
+                     <div style="margin-top: 50px;"><span style=" color: #f70000;text-align: left;font-style: italic;">温馨提示: VTM暂只支持口头挂失</span></div>
+            </div>
+           
+            </div>
+            <div style="margin-bottom:30px">
+            <a > 
+            <input type="button" class="btn_bottom left" onclick="offevent();" value="取消">   </input>
+        </a>
+        <a>    
+            <input type="button" class="btn_bottom right" onclick="SubmitData();" value="确定">   </input>
+        </a>
+        </div>
+ </body>
+</html>

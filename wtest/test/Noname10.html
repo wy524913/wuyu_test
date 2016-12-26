@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+  <script type="text/javascript" src="jquery.js" charset="GB18030"></script>
+ <script type="text/javascript">
+ <!--
+	
+ //-->
+ $.ready=function(){
+ 
+ $("#go").click(function(){
+	 var  num =Math.random()*100
+   throw   ' [-'+num+']请求参数不合法，请检查调用参数'
+ 
+ })
+ 
+ }
+ 
+function pro(){
+		return new Promise(function(resolve){
+			var timer = setTimeout(function(){
+			clearTimeout(timer)
+			resolve("halo")
+			},1000)	
+		})
+}
+
+function Promise(fn){
+			var callthis=null;
+					this.done=function(callback){
+						$.isFunction(callback)&&(callthis=callback)
+					}
+						function resolve(value){
+							setTimeout(function(){callthis(value)},1)	
+						}
+						fn(resolve)			
+}
+
+pro().done(function(data){console.log(data)})
+
+ 
+ </script>
+ <body>
+  <button id="go"> Run</button>
+ </body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "wtest",
+  "description": "hello world test app",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "4.14.0"
+  },
+  "devDependencies": {
+    "webpack": "^1.12.4"
+  }
+}

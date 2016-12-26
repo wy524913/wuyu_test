@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title></title>
+	<script id="seajsnode" type="text/javascript" src="../loader.js"   data-main="./src/no4" ></script>
+</head>
+ <body>
+  	<div class="top top_blue">
+			<p>苏银通</p>
+			<p>普通转账行名行号查询</p>
+			
+		</div>
+	
+		<div class="main" >	
+				<div  style="height:70px;border: 1px solid #E6E6E6;">
+							<span style="display:inline;font-weight:bold;">行名关键字:</span>
+							<input type="text" autoInput="cn" class="input" style="display:inline;margin:5px 0 0 40px;height:60px;" id="BnkNullNm" name="BnkNullNm"/>
+							<input id="query" type="button" class="btn_query"  onclick="" value="查询"  style="display:inline;margin-left:30px;"/>
+				</div>
+
+			
+					
+								<div style="width: 100%;">
+									<table class="table_product_top" style="background:#D2D2D5;border-bottom:1px solid #D2D2D5;">
+										<thead>
+											<tr>
+													<th  field="checked" style="width:10%;text-align:center;">选择</th>
+													<th  field="BnkNo" style="width:15%;text-align:center;">机构编号</th>
+													<th  field="BnkNm" style="width:25%;text-align:center;">机构名称</th>
+											</tr>
+										</thead>
+									</table>
+									<div style="height: 600px; overflow: auto;">
+									<table class="table_product" id="data_table1" pg-current = "1">
+									<tbody>
+									   
+										<tr class=''><td><input type='radio' name='rdo' style='width:40px;height:40px;'/></td><td>1</td><td>2</td></tr>
+										<tr class=''><td><input type='radio' name='rdo' style='width:40px;height:40px;'/></td><td>3</td><td>5</td></tr>
+										<tr class=''><td><input type='radio' name='rdo' style='width:40px;height:40px;'/></td><td>4</td><td>a</td></tr>
+										<tr class=''><td><input type='radio' name='rdo' style='width:40px;height:40px;'/></td><td>7</td><td>s</td></tr>
+										<tr class=''><td><input type='radio' name='rdo' style='width:40px;height:40px;'/></td><td>9</td><td>d</td></tr>
+										<tr class=''><td><input type='radio' name='rdo' style='width:40px;height:40px;'/></td><td>0</td><td>f</td></tr>
+										<tr class=''><td><input type='radio' name='rdo' style='width:40px;height:40px;'/></td><td>q</td><td>g</td></tr>
+										<tr class=''><td><input type='radio' name='rdo' style='width:40px;height:40px;'/></td><td>w</td><td>z</td></tr>
+										<tr class=''><td><input type='radio' name='rdo' style='width:40px;height:40px;'/></td><td>e</td><td>x</td></tr>
+										<tr class=''><td><input type='radio' name='rdo' style='width:40px;height:40px;'/></td><td>r</td><td>c</td></tr>
+										<tr class=''><td><input type='radio' name='rdo' style='width:40px;height:40px;'/></td><td>t</td><td>cv</td></tr>
+										<tr class=''><td><input type='radio' name='rdo' style='width:40px;height:40px;'/></td><td>y</td><td>b</td></tr>
+										<tr class=''><td><input type='radio' name='rdo' style='width:40px;height:40px;'/></td><td>u3</td><td>n</td></tr>
+										<tr class=''><td><input type='radio' name='rdo' style='width:40px;height:40px;'/></td><td>i</td><td>m</td></tr>
+										
+	
+									</tbody>	
+									</table>
+									</div>
+							
+							
+			</div>	
+		</div>
+		<input   id="choice_ok" type="button" class="btn_bottom right" style="text-align:center;" value="选择确认"/>
+		<input   id="quxiao" type="button" class="btn_bottom left" style="text-align:center;" onclick="seajs.use('no4',function(){alert('1231')})" value="取消"/>
+		<input   id="clear" type="button" class="btn_bottom left" style="text-align:center;" onclick="" value="清空"/>
+ </body>
+</html>

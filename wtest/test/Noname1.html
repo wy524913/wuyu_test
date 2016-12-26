@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title></title>
+    <script id="seajsnode" type="text/javascript" src="../loader.js"   data-main="./js/test1" ></script>
+</head>
+ <body>
+		<div class="top top_blue ">
+			<p>苏银通</p>
+			<p>确认转账信息</p>
+		</div>
+
+		  <div class="zhah">
+            <div class="main_box" style="height:97%;">
+                <h1>    确认转账信息</h1>
+                <div class="form_phone" style="padding-top:60px;">
+                    <div class="form_group">
+                        <div class="label" style="width: 44%;">
+                            <label>付款人账号：</label>
+                        </div>
+                        <div class="label" style="text-align: left;">
+                            <span >s:property value="$flowp('CardNo')"/></span>
+                        </div>
+                    </div>
+                    <div class="form_group">
+                        <div class="label" style="width: 44%;">
+                            <label>收款人姓名：</label>
+                        </div>
+                        <div class="label" style="text-align: left;">
+                            <span >s:property value="$flowp('InAcctNm')"/></span>
+                        </div>
+                    </div>
+                    
+                    <div class="form_group">
+                        <div class="label" style="width: 44%;">
+                            <label>收款人账号：</label>
+                        </div>
+                        <div class="label" style="text-align: left;">
+                            <span> s:property value="$flowp('IntoAcct')"/></span>
+                        </div>
+                    </div>
+                    <div class="form_group">
+                        <div class="label" style="width: 44%;">
+                            <label>汇款金额：</label>
+                        </div>
+                        <div class="label" style="text-align: left;">
+                            <span  id="TfrAmt">s:property value="$flowp('TfrAmt')"/></span>
+                        </div>
+                    </div>
+                    <div class="form_group">
+                        <div class="label" style="width: 44%;">
+                            <label>手续费：</label>
+                        </div>
+                        <div class="label" style="text-align: left;">
+                            <span  id="PcdFeeAmt">s:property value="$flowp('PcdFeeAmt')"/></span>
+                        </div>
+                    </div>
+                </div>
+            </div>      
+        </div>
+            <button class="btn_bottom left" onclick="cancel();">重新填写</button>
+            <input type="button" class="btn_bottom right" onclick="next();" value="确认"/>
+ </body>
+</html>
